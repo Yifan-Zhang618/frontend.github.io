@@ -1,0 +1,189 @@
+@font-face{
+    font-family:'star'; 
+    src:url('../font/Starjedi.ttf')
+}
+*{
+    box-sizing: border-box;
+}           
+body{
+    font-family: 'Courier',sans-serif;
+    background-color:black;
+    background-image: url(../images/4LbDOE.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/***********  Navbar  ***********/
+
+.nvbar{
+    background-color: rgba(255, 255, 255, 0.356);
+    padding-top: 10px;
+    padding-left: 0;
+    margin: 0; 
+    width: 15%;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+}
+h2{
+    color: #ffe81f;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'star';
+    font-weight:1000;
+    font-size: 40px;
+}
+
+a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: 800;
+}
+a:hover{
+    background-color:  #ffe81f;
+    color: black;
+}
+
+img{
+    position: relative;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+/***********  Search Section  ***********/
+
+.search{
+    margin-left: 18%;
+    margin-top: 10px;
+}
+
+.searchIcon{
+    margin: 0;
+    display: inline-block;
+    padding-top: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+.searchText{
+    display: inline-block;
+}
+
+.searchText input{
+    margin: 0;
+    border: 0;
+    height:30px;   
+    font-size: 15px; 
+} 
+
+.searchText input[type="text"]{
+    width: 500px;
+}
+
+.searchText input[type="submit"]:hover{
+    background-color: #ffe81f;;
+}
+
+/***********  Recommend Movies  ***********/
+
+.flex-container{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: stretch;
+    margin-left: 16%;
+    margin-top: 80px;
+}
+
+.flex-item{
+    width: 200px;
+    height: 350px;
+    margin: 15px;
+    padding: 10px;
+    background-color:grey;
+    background-color:transparent;
+    color: white;
+    text-align: center;
+}
+
+.flex-item img{
+    width: 180px;
+    height: 220px; 
+}
+
+p{
+    font-size: 20px;
+}
+
+.MovieDetail{
+    margin-top: 5px;
+    background-color: transparent; 
+    border-color: transparent;
+    font-size: 17px;
+    color: #ffe81f;;
+}
+
+.MovieDetail:hover{
+    color:rgb(245, 3, 124);
+}
+
+
+
+
+
+.menu-list {
+   /* position: absolute;*/
+	list-style:none;
+    width:0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    margin-top: 0px;
+    margin-left: 200px;
+}
+
+.menu-list li {
+    position: relative;
+    display:block;
+}
+.list {
+	list-style:none;
+	margin-left:-50px;
+	width:1000px;
+	height:60px;
+	overflow:hidden;
+}
+.list li {
+	width:1000px;
+	height:60px;
+	position:relative;
+    animation:myfirst 12s infinite;
+    animation-iteration-count:100;
+	line-height:60px;
+    text-align:center;
+	font-size:21px;
+	color:#fff;
+}
+
+@keyframes myfirst {
+
+	0% {
+	    top:0px;
+    }
+    25% {
+	    top:0px;
+    }
+    50% {
+	    top:-60px;
+    }
+    75% {
+	    top:-120px;
+    }
+    100% {
+	    top:-180px;
+    }
+
+}
